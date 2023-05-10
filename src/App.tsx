@@ -1,14 +1,16 @@
-import React, {ChangeEventHandler, FormEventHandler, useState} from 'react';
-import './App.css';
-import LoingForm from "./components/login/LoginForm";
+import 'App.css';
+import { Outlet } from 'react-router-dom';
+
+import {AuthProvider} from "./context/AuthContext";
 
 
 function App() {
-
   return (
-    <div className='m-10'>
-      <LoingForm/>
-    </div>
+      <AuthProvider>
+        <div className='m-10'>
+          <Outlet/>
+        </div>
+      </AuthProvider>
   );
 }
 
