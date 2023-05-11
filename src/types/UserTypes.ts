@@ -1,10 +1,6 @@
 export type UserType= {
-    email: string;
-    password: string;
-}
-
-export type AuthType = {
-    user: UserType | null;
-    login: (user:UserType)=> void;
-    logout: () => void;
+    uid?: string;
+    name?: string;
+    email?: string;
+    password?: string;
 }

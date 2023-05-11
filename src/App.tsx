@@ -1,17 +1,19 @@
 import 'App.css';
-import { Outlet } from 'react-router-dom';
+import {Outlet} from 'react-router-dom';
 
 import {AuthProvider} from "./context/AuthContext";
+import NavBar from "./components/NavBar";
 
 
 function App() {
-  return (
-      <AuthProvider>
-        <div className='m-10'>
-          <Outlet/>
-        </div>
-      </AuthProvider>
-  );
+    return (
+        <AuthProvider>
+            <div className='m-10'>
+                <NavBar/>
+                <Outlet/>
+            </div>
+        </AuthProvider>
+    );
 }
 
 export default App;
