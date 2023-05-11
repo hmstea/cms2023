@@ -9,8 +9,8 @@ import {
     signOut,
 } from "firebase/auth";
 import {initializeApp} from "firebase/app";
-import {CredentialResult, ProviderType} from "../../types/AuthTypes";
-import {UserType} from "../../types/UserTypes";
+import {CredentialResult, ProviderType} from "types/AuthTypes";
+import {UserType} from "types/UserTypes";
 
 export const firebaseAuth = {
     apiKey: process.env.REACT_APP_FIREBASE_API_KEY,

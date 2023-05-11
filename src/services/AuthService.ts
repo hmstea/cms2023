@@ -1,5 +1,5 @@
-import {CredentialResult} from "../types/AuthTypes";
-import {baseRedirectResult, baseSignOut} from "../api/firebase/firebaseAuth";
+import {CredentialResult} from "types/AuthTypes";
+import {baseRedirectResult, baseSignOut} from "api/firebase/firebaseAuth";
 
 
 export async function loginService(provider: string){

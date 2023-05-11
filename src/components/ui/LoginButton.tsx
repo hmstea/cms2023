@@ -1,12 +1,16 @@
+
+
 type Props = {
     login:()=>void;
     text: string;
+    icon: JSX.Element
 }
 
-function LoginButton({login, text}: Props) {
+function LoginButton({login, text, icon}: Props) {
 
     return (
-        <button onClick={login}>{text}</button>
+        <div className='mt-3'><button className='p-4 w-[300px] text-xl'
+                     onClick={login}>{icon} {text} </button></div>
     );
 }
 
