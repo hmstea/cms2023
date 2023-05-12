@@ -1,6 +1,6 @@
 function LogoutButton({logout}:{logout:()=>void}) {
     return (
-        <button  onClick={logout}>logout</button>
+        <button className='' onClick={logout}>logout</button>
     );
 }
 

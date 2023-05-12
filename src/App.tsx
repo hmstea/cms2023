@@ -8,7 +8,7 @@ import NavBar from "./components/NavBar";
 function App() {
     return (
         <AuthProvider>
-            <div className='m-10'>
+            <div className='m-10 h-full'>
                 <NavBar/>
                 <Outlet/>
             </div>

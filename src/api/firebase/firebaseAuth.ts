@@ -96,15 +96,12 @@ export function authStateChanged(callback: React.Dispatch<React.SetStateAction<U
             callback(authUser);
             // ...
         } else {
-            // User is signed out
-            // ...
             callback({});
         }
 
 
     });
 
-    console.log("authStateChanged")
 }
 
 export function baseSignOut() {

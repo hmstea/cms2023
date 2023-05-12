@@ -9,8 +9,8 @@ type Props = {
 function LoginButton({login, text, icon}: Props) {
 
     return (
-        <div className='mt-3'><button className='p-4 w-[300px] text-xl'
-                     onClick={login}>{icon} {text} </button></div>
+       <button className='mb-3 p-4 w-[300px] text-2xl font-semibold flex items-center justify-center m-auto  border-2 bg-gray-50'
+                                      onClick={login}><div className='mt-1.5 mr-2'>{icon}</div> {text}</button>
     );
 }
 
