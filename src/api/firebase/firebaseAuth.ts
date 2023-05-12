@@ -25,7 +25,7 @@ const auth = getAuth();
 
 
 export function baseLogin(provider: AuthProvider) {
-    setPersistence(auth, browserSessionPersistence)
+    /*setPersistence(auth, browserSessionPersistence)
         .then(() => {
 
             signInWithRedirect(auth, provider);
@@ -33,7 +33,8 @@ export function baseLogin(provider: AuthProvider) {
         .catch((error) => {
             console.log(error)
         });
-
+*/
+    signInWithRedirect(auth, provider);
 
 }
 
