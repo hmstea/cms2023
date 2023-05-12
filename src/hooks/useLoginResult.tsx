@@ -13,8 +13,10 @@ function useLoginResult() {
     useEffect(  () => {
         (async function(){
             const credential = await loginResult();
+            console.log('credential',credential)
             if(credential.result === 'success') {
                 const rtnUrl:string = (query.rtnUrl === null || query.rtnUrl === undefined) ? "/" : query.rtnUrl as string;
+                console.log('rtnUrl',rtnUrl)
                 setUrl(rtnUrl);
             } else {
                 setUrl("");

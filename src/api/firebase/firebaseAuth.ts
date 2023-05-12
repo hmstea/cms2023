@@ -40,6 +40,7 @@ export function baseLogin(provider: AuthProvider) {
 export async function baseRedirectResult(): Promise<CredentialResult> {
     return await getRedirectResult(auth)
         .then(async (result) => {
+            console.log('getRedirectResult',result)
             if (result !== null && result.providerId !== null) {
                 const providerName = result.providerId.split('.')[0];
                 const {Provider} = await import(`api/firebase/provider/${providerName}`);
